@@ -1,0 +1,126 @@
+/* CSS for the banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height to fit your banner dimensions */
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Use object-fit to preserve aspect ratio and fit the image within the banner without stretching */
+    animation: fadeIn 1.5s ease; /* Adjust the animation duration as needed */
+  }
+  
+  .opaque {
+    opacity: 1;
+  }
+  
+  .transparent {
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* CSS for the hero text */
+  
+    /* CSS for the banner */
+
+  /* CSS for the hero text */
+
+  
+  .hero__text-wrap {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    z-index: 2; /* Set a higher z-index to place the text in front of the image */
+  }
+  
+  .hero__text-content {
+
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .hero__text-content > * {
+    margin: 10px 0;
+  }
+  
+  .hero__text-shadow {
+    text-shadow: #fff;
+  }
+  
+  .hero__top-subtitle {
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: white;
+  }
+  
+ 
+
+
+
+
+
+  .animation-cropper {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .animation-contents {
+    animation: move 3s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-30px);
+    }
+  }
+
+
+
+
+  .hero__link {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 8px 16px; /* Adjust the padding as needed */
+    font-size: 14px; /* Adjust the font size as needed */
+    color: white;
+    border: 2px solid white; /* Add a white outline box around the buttons */
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  
+  /* Optional: Add hover effect for the buttons */
+  .btn:hover {
+    background-color: white; /* Change the background color on hover */
+    color: black; /* Change the text color on hover */
+  }
+ 
+  
+  
+  

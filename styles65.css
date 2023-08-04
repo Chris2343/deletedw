@@ -1,0 +1,254 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* General styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .header-line {
+    border-top: 1px solid #bcb5b5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Centered logo */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    
+  }
+  
+  .logo-container img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    
+    padding: 0px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-link {
+    color: rgb(17, 4, 4);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    display: flex;
+    align-items: center; /* Align the icon vertically */
+  }
+  
+  .nav-link i {
+    margin-left: 5px;
+  }
+  
+  .nav-link:hover {
+    border-color: rgb(6, 0, 0);
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      display: none; /* Hide the navbar on small screens */
+    }
+  }
+  
+  
+  /* Reset default margins and paddings */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 1px;
+  z-index: 1;
+  font-size: 12px;
+  border-radius: 0; /* Make the dropdown box rectangular */
+}
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .navbar li:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-link {
+    display: block;
+    padding: 5px 10px;
+    color: rgb(11, 11, 11);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .dropdown-link:hover {
+    border-color: rgb(251, 246, 246);
+  }
+  
+  .dropdown-content li {
+    margin: 5px 0;
+  }
+  
+
+
+
+  
+ /* footer styles */
+  /* Reset default margins and paddings */
+/* Reset default margins and paddings */
+/* Reset default margins and paddings */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styles for the site-footer */
+  .site-footer {
+    border-top: 1px solid  #171716;
+    border-bottom: 1px solid #f5f5f3;
+  }
+  
+  /* CSS for the centered footer */
+  .centered-footer {
+    text-align: center;
+    
+    padding: 20px 0;
+  }
+  
+  .centered-footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .centered-footer nav li {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .centered-footer nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+  }
+  
+  .centered-footer nav a:hover {
+    background-color: transparent;
+    color: #333;
+  }
+  
+  /* Footer small text styles */
+  .footer__small-text {
+    font-size: 17px;
+  }
+  
+  /* Styles for the page-width container */
+  .page-width {
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Grid styles */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  /* Footer item styles */
+  .footer__item {
+    text-align: left;
+  }
+  
+  /* Footer title styles */
+  .footer__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Footer link list styles */
+  .site-footer__linklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .site-footer__linklist li {
+    margin-bottom: 10px;
+  }
+  
+  .site-footer__linklist li a {
+    color: #040404;
+    text-decoration: none;
+  }
+  
+  .site-footer__linklist li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Collapsible content styles */
+  .collapsible-content {
+    display: none;
+  }
+  
+  /* Collapsible trigger button styles */
+  .collapsible-trigger-btn {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .collapsible-trigger__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  
+  /* Center the footer menu and "Follow Our Instagram" section */
+  .footer__item--menu,
+  .footer__item--newsletter,
+  .footer__item--instagram {
+    margin: 0 auto;
+  }
+  
+  /* Line underneath the footer */
+  .footer-line {
+    border-top: 1px solid #e8e8e1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  

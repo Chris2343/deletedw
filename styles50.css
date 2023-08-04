@@ -1,0 +1,126 @@
+/* Reset default margins and paddings */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height to fit your banner dimensions */
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Use object-fit to preserve aspect ratio and fit the image within the banner without stretching */
+    animation: fadeIn 1.5s ease; /* Adjust the animation duration as needed */
+  }
+  
+  .opaque {
+    opacity: 1;
+  }
+  
+  .transparent {
+    opacity: 0;
+  }
+  
+  .hero__text-wrap {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+  }
+  
+  .hero__text-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .hero__text-content > * {
+    margin: 10px 0;
+  }
+  
+  .hero__text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero__top-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .animation-cropper {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .animation-contents {
+    animation: move 3s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-30px);
+    }
+  }
+  
+  .hero__link {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  
+  .btn--inverse {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+  }
+  
+  /* Additional styles for the footer and header if needed */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    z-index: 1; /* Set a positive z-index to position the header above the banner */
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    z-index: 1; /* Set a positive z-index to position the footer above the banner */
+  }
+  

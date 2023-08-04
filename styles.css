@@ -1,0 +1,311 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .header-line {
+    border-top: 1px solid #090909;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+/* Your existing CSS rules */
+
+/* Add header line styles */
+
+
+  /* General styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Centered logo */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    
+  }
+  
+ 
+  .logo-container img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  /* Navbar styles */
+  /* Styles for the navbar (desktop) */
+/* Styles for the navbar (desktop) */
+.navbar {
+    padding: 0px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-link {
+    color: rgb(17, 4, 4);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    display: flex;
+    align-items: center; /* Align the icon vertically */
+  }
+  
+  .nav-link i {
+    margin-left: 5px;
+  }
+  
+  .nav-link:hover {
+    border-color: rgb(6, 0, 0);
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .navbar {
+      display: none; /* Hide the navbar on small screens */
+    }
+  }
+  
+  /* Reset default margins and paddings */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#fff;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .navbar li:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-link {
+    display: block;
+    padding: 5px 10px;
+    color: rgb(11, 11, 11);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .dropdown-link:hover {
+    border-color: rgb(251, 246, 246);
+  }
+  
+  .dropdown-content li {
+    margin: 5px 0;
+  }
+  
+
+
+
+  
+ /* footer styles */
+  /* Reset default margins and paddings */
+/* Reset default margins and paddings */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* CSS for the centered footer */
+  .centered-footer {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+  }
+  
+  .centered-footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .centered-footer nav li {
+    display: block; /* Change to "block" to stack items vertically */
+    margin: 10px 0; /* Add vertical margin between items */
+  }
+  
+  .centered-footer nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px; /* Adjust the font size as needed */
+  }
+  
+  .centered-footer nav a:hover {
+    /* Remove hover effect */
+    background-color: transparent;
+    color: #333;
+  }
+  
+  .footer__small-text{
+    font-size: 14px;
+  }
+
+  /*  Contact page*/
+ /* Existing styles (if any) */
+
+/* Additional CSS styles for centering and bullet points */
+/* Existing styles (if any) */
+
+/* Additional CSS styles for centering and bullet points */
+.page-width {
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    font-size: 12px;
+  }
+  
+  .section-header__title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 600px) {
+    .rte {
+      text-align: left;
+      font-size: 12px;
+    }
+  
+    .rte ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-left: 12px; /* Adjust the margin for proper spacing */
+    }
+  
+    .rte li {
+      font-size: 12px; /* Set the font size for list items */
+    }
+  }
+  
+  /* */
+  /* Styles for the site-footer */
+/* Styles for the site-footer */
+/* Styles for the site-footer */
+/* Styles for the site-footer */
+/* Styles for the site-footer */
+.site-footer {
+    border-top: 1px solid #e8e8e1;
+    
+  }
+  
+  /* Styles for the page-width container */
+  .page-width {
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Grid styles */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  /* Footer item styles */
+  .footer__item {
+    text-align: left;
+  }
+  
+  /* Footer title styles */
+  .footer__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  
+  .site-footer__linklist li {
+    margin-bottom: 10px;
+  }
+  
+  .site-footer__linklist li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .site-footer__linklist li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Collapsible content styles */
+  .collapsible-content {
+    display: none;
+  }
+  
+  /* Collapsible trigger button styles */
+  .collapsible-trigger-btn {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .collapsible-trigger__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  
+  /* Footer small text styles */
+  .footer__small-text {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  
+  
+  /* Line underneath the footer */
+  .footer-line {
+    border-top: 1px solid #e8e8e1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .site-footer__linklist {
+    text-align: center;
+    padding: 20px 0;
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove default margins */
+  }
+  
+
+
+  /* styles.css */
+
+/* styles.css */
+
+a {
+  color: black;
+}

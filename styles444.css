@@ -1,0 +1,47 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #333; /* Set the background color of the navbar */
+    padding: 10px 20px; /* Add some padding to the navbar */
+  }
+  
+  nav ul {
+    list-style: none; /* Remove the default list style */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block; /* Make the list items appear horizontally */
+    margin-right: 20px; /* Add some space between list items */
+  }
+  
+  nav li:last-child {
+    margin-right: 0; /* Remove right margin from the last list item */
+  }
+  
+  /* Style the navigation links */
+  .nav-link {
+    color: #fff; /* Set the text color to white */
+    text-decoration: none; /* Remove underline from links */
+    padding: 5px 10px; /* Add some padding to the links */
+  }
+  
+  /* Hover effect for the links */
+  .nav-link:hover {
+    background-color: #555; /* Change the background color on hover */
+  }
+  
+  /* Media query for small screens (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    .navbar {
+      display: none; /* Hide the navbar on small screens */
+    }
+  }
+  

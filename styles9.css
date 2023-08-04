@@ -1,0 +1,184 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+   
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    background-color: #fbfafa;
+    color: #030303;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    transition: left 0.3s ease;
+    
+  }
+  
+  
+  .sidebar.active {
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #0b0a0a;
+    font-size: 18px;
+  }
+  
+  .sidebar a:hover {
+    color: #151615;
+  }
+  
+  /* Dropdown styles */
+  .dropdown-content {
+    display: none;
+  }
+  
+  .dropdown-btn {
+    cursor: pointer;
+  }
+  
+  .dropdown-btn::after {
+    content: "\25BC";
+    margin-left: 5px;
+  }
+  
+  /* Show dropdown when clicked */
+  .dropdown-btn.active ~ .dropdown-content {
+    display: block;
+  }
+  
+  /* Content styles */
+  .content {
+    margin-left: 220px;
+    padding: 20px;
+  }
+  
+  header {
+    
+    color: #fff;
+    padding: 10px;
+  }
+  
+  header h1 {
+    display: inline;
+  }
+  
+  header .open-menu {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .close-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .sidebar hr {
+    border: 0.5px solid #e8e8e1;
+    margin: 10px 0;
+  }
+  .sidebar li a {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  
+  
+  /* Media query for small screens (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    .sidebar {
+      left: -220px;
+    }
+  
+    .content {
+      margin-left: 0;
+    }
+  
+    .sidebar.active {
+      left: 0;
+    }
+  
+    .close-menu {
+      display: block;
+    }
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-image: url("star.png");
+    background-size: cover;
+    margin: 0 3px;
+  }
+  
+  .rating input:checked + label {
+    background-position: 0 -30px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    display: block;
+    margin: 10px auto;
+  }
+  
+  #reviewsList {
+    margin-top: 30px;
+  }
+  
+  .review-item {
+    margin-bottom: 20px;
+  }
+  

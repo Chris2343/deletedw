@@ -1,0 +1,37 @@
+/* style.css */
+
+/* Add the following styles to recreate the size table row */
+
+.size-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .size-row label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .size-row .size-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .size-row .size-option.selected {
+    border: 2px solid #000;
+  }
+  
+  .size-row .size-option:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Rest of the existing CSS code... */
+  

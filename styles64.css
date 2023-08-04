@@ -1,0 +1,63 @@
+/* styles.css */
+
+/* Add any additional CSS styles as needed */
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2; /* Ensure the logo is above other elements */
+  }
+  
+  .filter-button {
+    position: relative; /* Use relative positioning to keep dropdown relative to the button */
+    display: inline-block;
+    margin-left: 20px; /* Adjust the distance between the logo and the filter button */
+  }
+  
+  .filter-btn {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filter-btn i {
+    margin-right: 5px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the dropdown below the filter button */
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .filter-button:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-title {
+    font-weight: bold;
+  }
+  
+  .category-link {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+  }
+  
+  .category-link:hover {
+    text-decoration: underline;
+  }
+  
